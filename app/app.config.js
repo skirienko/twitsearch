@@ -16,3 +16,5 @@ config(['$locationProvider' ,'$routeProvider',
         otherwise('/phones');
     }
 ]);
+
+angular.module('twitsearch').constant('CONSUMER_KEY', 'HlGV8UnlvdmmMc80d530kHwv1');
