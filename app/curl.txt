@@ -1,0 +1,8 @@
+# cURL config file
+# use curl -K curl.txt
+
+url="https://api.twitter.com/oauth2/token"
+user-agent="skirienko-twitsearch"
+-d grant_type=client_credentials
+-v
+-H "Authorization: Basic SGxHVjhVbmx2ZG1tTWM4MGQ1MzBrSHd2MTpZbnNSYzVoVTBhM3VnSGFCM1QwS1o5aWxiVFBpdWpXcEM3Q0lCVGhOZGp1UXJvaVl1WQ=="
