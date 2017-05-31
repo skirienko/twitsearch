@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="twitsearch">
+<head>
+    <meta charset="utf-8">
+    <title>Twitter Search</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+</head>
+<body>
+
+<div ng-controller="mainController">
+    <form ng-submit="search()">
+    Search: <input type="search" name="query" ng-model="query"/>
+    </form>
+</div>
+
+
+
+</body>
+</html>
