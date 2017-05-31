@@ -18,6 +18,16 @@
     <form ng-submit="search()">
     Search: <input type="search" name="query" ng-model="query"/>
     </form>
+
+    <div class="results" ng-show="tweets.length">
+        <h1>Results</h1>
+        <ul class="tweets">
+            <li ng-repeat="tweet in tweets">
+                <span class="user">{{tweet.user.name}} @{{tweet.user.screen_name}}:</span>
+                {{ tweet.text }}
+            </li>
+        </ul>
+    </div>
 </div>
 
 

@@ -14,7 +14,6 @@ app.get("/search", function(req, res) {
                 res.json(result);
             })
     }
-    // console.log(res);
 });
 
 app.listen(3000, function() {
