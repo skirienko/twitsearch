@@ -14,17 +14,18 @@
 </head>
 <body>
 
-<div ng-controller="mainController">
+<div ng-controller="mainController" class="container">
+    <h1>Twitter search</h1>
     <form ng-submit="search()">
     Search: <input type="search" name="query" ng-model="query"/>
     </form>
 
     <div class="results" ng-show="tweets.length">
-        <h1>Results</h1>
-        <ul class="tweets">
+        <h2>Results</h2>
+        <ul class="media-list tweets">
             <li ng-repeat="tweet in tweets">
-                <span class="user">{{tweet.user.name}} @{{tweet.user.screen_name}}:</span>
-                {{ tweet.text }}
+                <span class="user">{{tweet.user.name}} <span class="screen-name">@{{tweet.user.screen_name}}</span>:</span>
+                <a href="" target="twitter">{{ tweet.text }}</a>
             </li>
         </ul>
     </div>

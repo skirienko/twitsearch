@@ -1,0 +1,15 @@
+
+.tweets li {
+    margin-bottom: 20px;
+}
+
+.user {
+    display: block;
+    font-weight: bold;
+}
+
+.user .screen-name {
+    margin-left: 1em;
+    font-weight: normal;
+    color: #657786;
+}

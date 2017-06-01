@@ -10,14 +10,20 @@ app.get("/search", function(req, res) {
     console.log(req.query);
     if (req.query && req.query.q) {
         twitterSearch(req.query.q)
-            .then(function(result) {
-                res.json(result);
-            })
+            .then(
+                function(result) {
+                    res.json(result);
+                },
+                function(error) {
+                    console.log(error);
+	                res.json(error);
+                }
+            );
     }
 });
 
 app.listen(3000, function() {
-    console.log("Listening to http://localhost:3000. Press CTRL+C to escape.")
+    console.log("Listening to http://localhost:3000. Press CTRL+C to escape.");
 });
 
 const client = new Twitter({
