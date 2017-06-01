@@ -24,9 +24,10 @@
         <ul class="media-list tweets">
             <li ng-repeat="tweet in tweets">
                 <span class="user">{{tweet.user.name}} <span class="screen-name">@{{tweet.user.screen_name}}</span>:</span>
-                <{{ tweet.text }}
+                {{ tweet.text }}
             </li>
         </ul>
+        <a ng-click="addMoreTweets()">Load more</a>
     </div>
 </div>
 
